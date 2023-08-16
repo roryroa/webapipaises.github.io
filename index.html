@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', ()=>{
+            console.log('Hola Mundo desde la Consola!!!')
+        })
+    </script>
+
+    <title>Web para Localizar un Pais via API</title>
+</head>
+<body>
+    <h1 id="usuario">Informacion Geografica</h1>
+    <h2 style="color: brown;">Consultas</h2>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Menu</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a onclick="Load(saludo);" class="nav-link" href="#">Caracteristicas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Precios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Deshabilitado</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <h1 id="pais_name"></h1>
+        <hr>
+        <image id="pais_flag" style="width:400px;height:400px;"/>
+
+        <div class="row">
+          <div class="col-2">
+            <label>Capital:</label>
+          </div>
+          <div class="col-2">
+            <p id="pais_capital"></p>
+          </div>
+          <div class="col-2">
+            <label>Region:</label>
+          </div>
+          <div class="col-2">
+            <p id="pais_region"></p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-2">
+            <label>Moneda:</label>
+          </div>
+          <div class="col-2">
+            <p id="pais_moneda"></p>
+          </div>
+          <div class="col-2">
+            <label>Idioma:</label>
+          </div>
+          <div class="col-2">
+            <p id="pais_idioma"></p>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <input type="text" id="pais_input" class="form-control" placeholder="Pais....">
+            </div>
+            <div class="col-md-6">
+                <button id="btn_search" class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+    </div>
+
+    
+    
+
+    <script type="text/javascript" src="./js/clases.js"></script>
+    
+</body>
+</html>
